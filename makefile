@@ -6,7 +6,7 @@ MYINCLUDES=/home/scale/g++Projects/gLib/
 
 MYLIBRARIES=fltk
 CC=g++
-
+CFLAGS= -g -Wall -Wextra
 #------------------------------------------------------------------------------
 
 
@@ -17,7 +17,7 @@ all: $(MYPROGRAM)
 
 $(MYPROGRAM): $(SOURCE)
 
-	$(CC) $(SOURCE) -o$(MYPROGRAM)
+	$(CC) $(SOURCE) $(CFLAGS) -o$(MYPROGRAM)
 
 clean:
 
